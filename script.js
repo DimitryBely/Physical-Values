@@ -110,4 +110,33 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // ----------
 
+// Navigation
+    
+    const   densityStages = document.querySelectorAll('.stage'),
+            densityTables = document.querySelectorAll('.density-table');
+
+    const   nav_1 = document.querySelectorAll('.nav-1 > li');
+
+    nav_1.forEach( (btn) => {
+        btn.addEventListener( 'click', () => {
+            densityStages[0].textContent = 'Density';
+            densityStages[1].textContent = btn.textContent;
+            if(btn.textContent == 'Metal') { 
+                densityTables[0].classList.remove('d-none');
+                densityTables[1].classList.add('d-none');
+                densityTables[2].classList.add('d-none');
+            } else if(btn.textContent == 'Liquid'){
+                densityTables[0].classList.add('d-none');
+                densityTables[1].classList.remove('d-none');
+                densityTables[2].classList.add('d-none');
+            } else if(btn.textContent == 'Gas'){
+                densityTables[0].classList.add('d-none');
+                densityTables[1].classList.add('d-none');
+                densityTables[2].classList.remove('d-none');
+            }
+        });
+    });
+
+// ---------
+
 });
