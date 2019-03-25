@@ -16,7 +16,9 @@ body{
     font-weight: 600;
 }
 nav{
+    overflow: auto;
     width: 200px;
+    height: 350px;
     margin: 0;
 }
 
@@ -33,14 +35,10 @@ nav ul span{
 }
 nav li{
     cursor: pointer;
-    display: none;
     list-style: none;
     padding: 10px;
     width: 100%;
     height: 40px;
-}
-nav ul:hover li{
-    display: flex;
 }
 nav ul li:hover{
     background-color: #eceaea;
@@ -63,15 +61,33 @@ nav ul li:hover{
     border-left: 1px solid #727272;
 }
 
-.table{
+.density-table{
     display: grid;
     grid-template-rows: 55px 55px 55px 55px 55px 55px 55px 55px 55px;
     grid-template-columns:  100px 70px 100px 70px 100px 70px 100px 70px;
 }
+.transcalencies-table{
+    display: grid;
+    grid-template-rows: 55px 55px 55px 55px 55px 55px 55px 55px 55px;
+    grid-template-columns:  100px 100px 100px 100px 100px 100px;
+}
+.resistivity-table{
+    display: grid;
+    grid-template-columns:  100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 55px 55px 55px 55px 55px 55px 55px 55px 55px;
+}
+#page_04{
+    grid-template-columns:  100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 55px 55px 55px 55px 55px 55px 55px 55px 55px;
+}
+#page_07{
+    grid-template-columns:  100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 55px 55px 55px 55px 55px 55px;
+}
 .table > div{
     padding: 5px;
 }
-.densityValue{
+.tableBorder{
     border-right: 1px solid #727272;
 }
 .row1{
@@ -94,5 +110,13 @@ nav ul li:hover{
     height: 30px;
 }
 #search > div{
+    cursor: pointer;
+}
+
+#page_00{
+    display: block;
+}
+
+#btn_00{
     cursor: pointer;
 }

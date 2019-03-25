@@ -112,28 +112,49 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Navigation
     
-    const   densityStages = document.querySelectorAll('.stage'),
-            densityTables = document.querySelectorAll('.density-table');
+    const   nav = document.querySelectorAll('nav li'),
+            nav_ul = document.querySelectorAll('.nav-ul'),
+            welcomeBtn = document.querySelector('#btn_00'),
+            path = document.querySelectorAll('.path');
 
-    const   nav_1 = document.querySelectorAll('.nav-1 > li');
+    let now = '00';
 
-    nav_1.forEach( (btn) => {
+    welcomeBtn.addEventListener( 'click', () => {
+        document.querySelector(`#page_${now}`).classList.add('d-none');
+        now = '00';
+        document.querySelector(`#page_00`).classList.remove('d-none');
+        path[0].textContent = 'Welcome';
+        path[1].textContent = '';
+    });
+
+    nav_ul.forEach( (btn) => {
+        btn.addEventListener('click', () => {
+            let first = btn.id.slice(0, 2);
+            let last = btn.id.slice(-2);
+            nav.forEach( (li) => {
+                if(+li.id.slice(-2) >= +first && +li.id.slice(-2) <= +last){
+                    if(li.classList.contains('d-none')) {
+                        li.classList.remove('d-none');
+                        li.classList.add('d-flex');
+                    } else {
+                        li.classList.remove('d-flex');
+                        li.classList.add('d-none');
+                    }
+                }
+            });
+        });
+    });
+
+    nav.forEach( (btn) => {
         btn.addEventListener( 'click', () => {
-            densityStages[0].textContent = 'Density';
-            densityStages[1].textContent = btn.textContent;
-            if(btn.textContent == 'Metal') { 
-                densityTables[0].classList.remove('d-none');
-                densityTables[1].classList.add('d-none');
-                densityTables[2].classList.add('d-none');
-            } else if(btn.textContent == 'Liquid'){
-                densityTables[0].classList.add('d-none');
-                densityTables[1].classList.remove('d-none');
-                densityTables[2].classList.add('d-none');
-            } else if(btn.textContent == 'Gas'){
-                densityTables[0].classList.add('d-none');
-                densityTables[1].classList.add('d-none');
-                densityTables[2].classList.remove('d-none');
-            }
+            document.querySelector(`#page_${now}`).classList.add('d-none');
+            now = btn.id.slice(-2);
+            document.querySelector(`#page_${btn.id.slice(-2)}`).classList.remove('d-none');
+            if(+now == 0) {path[0].textContent = 'Welcome'}
+            else if(+now <= 3) {path[0].textContent = 'Density'}
+            else if(+now <= 7) {path[0].textContent = 'Transcalencies'}
+            else if(+now == 8) {path[0].textContent = 'Electrical resistivity'}
+            path[1].textContent = `/${btn.textContent}`;
         });
     });
 

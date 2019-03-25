@@ -12,22 +12,22 @@
   <div class="container-fluid p-0 d-flex flex-row">
     <div class="navCont">
       <nav>
-        <ul class="nav-1">
+        <ul class="nav-ul" id="01-03">
           <span>Density</span>
-          <li>Metal</li>
-          <li>Liquid</li>
-          <li>Gas</li>
+          <li class="d-none" id="btn_01">Metal</li>
+          <li class="d-none" id="btn_02">Liquid</li>
+          <li class="d-none" id="btn_03">Gas</li>
         </ul>
-        <ul class="nav-2">
+        <ul class="nav-ul" id="04-07">
           <span>Transcalencies</span>
-          <li>Heating</li>
-          <li>Melting</li>
-          <li>Evaporation</li>
-          <li>Fuel combustion</li>
+          <li class="d-none" id="btn_04">Heating</li>
+          <li class="d-none" id="btn_05">Melting</li>
+          <li class="d-none" id="btn_06">Evaporation</li>
+          <li class="d-none" id="btn_07">Fuel combustion</li>
         </ul>
-        <ul class="nav-3">
+        <ul class="nav-ul" id="08-08"> 
           <span>Electrical resistivity</span>
-          <li>Conductors</li>
+          <li class="d-none" id="btn_08">Conductors</li>
         </ul>
       </nav>
       <div class="calculator fixed-bottom">
@@ -69,64 +69,178 @@
     </div>
     <div class="container mainContent">
       <div class="innerMainContent p-2">
-        <div class="d-flex justify-content-between align-items-center"><h1><span></span>Physical Values</span></h1><div class="d-flex justify-content-between align-items-center" id="search"><input type="text"><div class="btn bg-light border"><span>Search</span></div></div></div>
-        <h3><span class="stage">Density</span>/<span class="stage">Liquid</span></h3>
+        <div class="d-flex justify-content-between align-items-center"><h1><div id="btn_00">Physical Values</div></h1><div class="d-flex justify-content-between align-items-center" id="search"><input type="text"><div class="btn bg-light border"><span>Search</span></div></div></div>
+        <h3><span class="path">Welcome</span><span class="path"></span></h3>
         <hr>
-        <div class="table density-table d-none">
+        <div id="page_00">
+          <h2>Welcome</h2>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sint, odit eos dolorem laboriosam, et, eum nisi velit incidunt quam praesentium ad excepturi quidem obcaecati voluptate reiciendis harum. Minus, consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero natus necessitatibus magnam consequatur sapiente earum officiis, tempore consequuntur ex hic. Nam error consectetur dolorem quaerat, repudiandae expedita odio sed amet id ad, cum quo aspernatur placeat optio harum voluptatibus asperiores voluptatem praesentium unde possimus dicta quod deleniti. Ad mollitia vero expedita sint ex, eius fuga culpa accusamus asperiores earum nostrum neque excepturi voluptate quia rerum molestias, at maiores officiis voluptas!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste iusto, saepe quod molestiae provident recusandae aspernatur, cum consequatur dignissimos expedita voluptate deleniti laboriosam, numquam molestias. Deserunt alias tempore doloribus voluptatibus adipisci et incidunt magnam, repellat, delectus voluptas ad eos eum dolorum nemo provident magni, hic quod temporibus! Pariatur, sapiente?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati id pariatur harum quas libero nihil perspiciatis exercitationem, ipsam similique dolorem commodi iusto maxime sapiente ipsa. Animi porro illum explicabo eaque impedit nemo dolor ipsa repellendus voluptatum, deleniti voluptatibus dolorum?</p>
+        </div>
 
-<div class="row1">Name</div><div class="densityValue row1">Density</div><div class="row1">Name</div><div class="densityValue row1">Density</div>
-<div class="row1">Name</div><div class="densityValue row1">Density</div><div class="row1">Name</div><div class="densityValue row1">Density</div>
+        <div class="table density-table d-none" id="page_01">
 
-<div class="row2">Osmium</div><div class="densityValue row2">22600</div><div class="row2">Iridium</div><div class="densityValue row2">22400</div>
-<div class="row2">Platinum</div><div class="densityValue row2">21500</div><div class="row2">Gold</div><div class="densityValue row2">19300</div>
+<div class="row1">Name</div><div class="tableBorder row1">Density</div><div class="row1">Name</div><div class="tableBorder row1">Density</div>
+<div class="row1">Name</div><div class="tableBorder row1">Density</div><div class="row1">Name</div><div class=" row1">Density</div>
 
-<div class="row1">Lead</div><div class="densityValue row1">11300</div><div class="row1">Silver</div><div class="densityValue row1">10500</div>
-<div class="row1">Copper</div><div class="densityValue row1">8900</div><div class="row1">Brass</div><div class="densityValue row1">8500</div>
+<div class="row2">Osmium</div><div class="tableBorder row2">22600</div><div class="row2">Iridium</div><div class="tableBorder row2">22400</div>
+<div class="row2">Platinum</div><div class="tableBorder row2">21500</div><div class="row2">Gold</div><div class=" row2">19300</div>
 
-<div class="row2">Steel</div><div class="densityValue row2">7800</div><div class="row2">Iron</div><div class="densityValue row2">7300</div>
-<div class="row2">Tin</div><div class="densityValue row2">7100</div><div class="row2">Zinc</div><div class="densityValue row2">7000</div>
+<div class="row1">Lead</div><div class="tableBorder row1">11300</div><div class="row1">Silver</div><div class="tableBorder row1">10500</div>
+<div class="row1">Copper</div><div class="tableBorder row1">8900</div><div class="row1">Brass</div><div class=" row1">8500</div>
 
-<div class="row1">Cast iron</div><div class="densityValue row1">4000</div><div class="row1">Corundum</div><div class="densityValue row1">2700</div>
-<div class="row1">Aluminum</div><div class="densityValue row1">2700</div><div class="row1">Marble</div><div class="densityValue row1">2700</div>
+<div class="row2">Steel</div><div class="tableBorder row2">7800</div><div class="row2">Iron</div><div class="tableBorder row2">7300</div>
+<div class="row2">Tin</div><div class="tableBorder row2">7100</div><div class="row2">Zinc</div><div class=" row2">7000</div>
 
-<div class="row2">Window glass</div><div class="densityValue row2">2500</div><div class="row2">Porcelain</div><div class="densityValue row2">2300</div>
-<div class="row2">Concrete</div><div class="densityValue row2">2300</div><div class="row2">Brick</div><div class="densityValue row2">1800</div>
+<div class="row1">Cast iron</div><div class="tableBorder row1">4000</div><div class="row1">Corundum</div><div class="tableBorder row1">2700</div>
+<div class="row1">Aluminum</div><div class="tableBorder row1">2700</div><div class="row1">Marble</div><div class=" row1">2700</div>
 
-<div class="row1">Refined sugar</div><div class="densityValue row1">1600</div><div class="row1">Plexiglas</div><div class="densityValue row1">1200</div>
-<div class="row1">Kapron</div><div class="densityValue row1">1100</div><div class="row1">Polyethylene</div><div class="densityValue row1">920</div>
+<div class="row2">Window glass</div><div class="tableBorder row2">2500</div><div class="row2">Porcelain</div><div class="tableBorder row2">2300</div>
+<div class="row2">Concrete</div><div class="tableBorder row2">2300</div><div class="row2">Brick</div><div class=" row2">1800</div>
 
-<div class="row2">Paraffin</div><div class="densityValue row2">900</div><div class="row2">Ice</div><div class="densityValue row2">900</div>
-<div class="row2">Oak (dry)</div><div class="densityValue row2">700</div><div class="row2">Pine (dry)</div><div class="densityValue row2">400</div>
+<div class="row1">Refined sugar</div><div class="tableBorder row1">1600</div><div class="row1">Plexiglas</div><div class="tableBorder row1">1200</div>
+<div class="row1">Kapron</div><div class="tableBorder row1">1100</div><div class="row1">Polyethylene</div><div class=" row1">920</div>
 
-<div class="row1">Cork</div><div class="densityValue row1">240</div>
+<div class="row2">Paraffin</div><div class="tableBorder row2">900</div><div class="row2">Ice</div><div class="tableBorder row2">900</div>
+<div class="row2">Oak (dry)</div><div class="tableBorder row2">700</div><div class="row2">Pine (dry)</div><div class=" row2">400</div>
+
+<div class="row1">Cork</div><div class="tableBorder row1">240</div>
         </div>
         
-        <div class="table density-table d-none">
+        <div class="table density-table d-none"  id="page_02">
 
-<div class="row1">Name</div><div class="row1 densityValue">Density</div><div class="row1">Name</div><div class="row1 densityValue">Density</div>
-<div class="row1">Name</div><div class="row1 densityValue">Density</div><div class="row1">Name</div><div class="row1 densityValue">Density</div>
+<div class="row1">Name</div><div class="row1 tableBorder">Density</div><div class="row1">Name</div><div class="row1 tableBorder">Density</div>
+<div class="row1">Name</div><div class="row1 tableBorder">Density</div><div class="row1">Name</div><div class="row1 ">Density</div>
 
-<div class="row2">Бензин</div><div class="row2 densityValue">710</div><div class="row2">Вода</div><div class="row2 densityValue">1000</div>
-<div class="row2">Вода морская</div><div class="row2 densityValue">1030</div><div class="row2">Керосин</div><div class="row2 densityValue">800</div>
+<div class="row2">Petrol</div><div class="row2 tableBorder">710</div><div class="row2">Water</div><div class="row2 tableBorder">1000</div>
+<div class="row2">Sea water</div><div class="row2 tableBorder">1030</div><div class="row2">Kerosene</div><div class="row2 ">800</div>
 
-<div class="row1">Молоко</div><div class="row1 densityValue">1030</div><div class="row1">Нефть</div><div class="row1 densityValue">800</div>
-<div class="row1">Ртуть</div><div class="row1 densityValue">13600</div><div class="row1">Серная Кислота</div><div class="row1 densityValue">1800</div>
+<div class="row1">Milk</div><div class="row1 tableBorder">1030</div><div class="row1">Oil</div><div class="row1 tableBorder">800</div>
+<div class="row1">Mercury</div><div class="row1 tableBorder">13600</div><div class="row1">Sulphuric acid</div><div class="row1 ">1800</div>
 
-<div class="row2">Спирт</div><div class="row2 densityValue">800</div><div class="row2">Эфир</div><div class="row2 densityValue">710</div>
+<div class="row2">Alcohol</div><div class="row2 tableBorder">800</div><div class="row2">Ether</div><div class="row2 tableBorder">710</div>
+
+        </div>
+
+        <div class="table density-table d-none" id="page_03">
+
+<div class="row1">Name</div><div class="row1 tableBorder">Density</div><div class="row1">Name</div><div class="row1 tableBorder">Density</div>
+<div class="row1">Name</div><div class="row1 tableBorder">Density</div><div class="row1">Name</div><div class="row1 ">Density</div>
+
+<div class="row2">Air</div><div class="row2 tableBorder">1.29</div><div class="row2">Hydrogen</div><div class="row2 tableBorder">0.09</div>
+<div class="row2">Propane</div><div class="row2 tableBorder">2</div><div class="row2">Helium</div><div class="row2">0.18</div>
+
+<div class="row1">Neon</div><div class="row1 tableBorder">0.9</div><div class="row1">Carbon monoxide IV</div><div class="row1 tableBorder">1.98</div>
 
         </div>
 
-        <div class="table density-table d-none">
+        <div class="table transcalencies-table d-none" id="page_04">
 
-<div class="row1">Name</div><div class="row1 densityValue">Density</div><div class="row1">Name</div><div class="row1 densityValue">Density</div>
-<div class="row1">Name</div><div class="row1 densityValue">Density</div><div class="row1">Name</div><div class="row1 densityValue">Density</div>
+<div class="row1">Name</div><div class="row1 tableBorder">Energy</div>
+<div class="row1">Name</div><div class="row1 tableBorder">Energy</div>
+<div class="row1">Name</div><div class="row1 tableBorder">Energy</div>
+<div class="row1">Name</div><div class="row1">Energy</div>
 
-<div class="row2">Воздух</div><div class="row2 densityValue">1.29</div><div class="row2">Водород</div><div class="row2 densityValue">0.09</div>
-<div class="row2">Пропан</div><div class="row2 densityValue">2</div><div class="row2">Гелий</div><div class="row2 densityValue">0.18</div>
+<div class="row2">Aluminum</div><div class="row2 tableBorder">920</div><div class="row2">Water</div><div class="row2 tableBorder">4200</div>
+<div class="row2">Air</div><div class="row2 tableBorder">1000</div><div class="row2">Iron</div><div class="row2 ">460</div>
 
-<div class="row1">Неон</div><div class="row1 densityValue">0.9</div><div class="row1">Оксид Углерода IV</div><div class="row1 densityValue">1.98</div>
+<div class="row1">Kerosene</div><div class="row1 tableBorder">2100</div><div class="row1">Brick</div><div class="row1 tableBorder">880</div>
+<div class="row1">Brass</div><div class="row1 tableBorder">380</div><div class="row1">Ice</div><div class="row1 ">2100</div>
+
+<div class="row2">Copper</div><div class="row2 tableBorder">380</div><div class="row2">Nickel</div><div class="row2 tableBorder">460</div>
+<div class="row2">Tin</div><div class="row2 tableBorder">250</div><div class="row2">Sand</div><div class="row2 ">880</div>
+
+<div class="row1">Platinum</div><div class="row1 tableBorder">140</div><div class="row1">Mercury</div><div class="row1 tableBorder">130</div>
+<div class="row1">Lead</div><div class="row1 tableBorder">140</div><div class="row1">Silver</div><div class="row1 ">250</div>
+
+<div class="row2">Alcohol</div><div class="row2 tableBorder">2500</div><div class="row2">Steel</div><div class="row2 tableBorder">500</div>
+<div class="row2">Glass</div><div class="row2 tableBorder">840</div><div class="row2">Zinc</div><div class="row2 ">380</div>
+
+<div class="row1">Cast iron</div><div class="row1 tableBorder">540</div><div class="row1">Ether</div><div class="row1 ">3340</div>
 
         </div>
+
+        <div class="table transcalencies-table d-none" id="page_05">
+
+<div class="row1">Name</div><div class="row1">Energy, 10<sup>4</sup></div><div class="row1 tableBorder">Temperature</div>
+<div class="row1">Name</div><div class="row1">Energy, 10<sup>4</sup></div><div class="row1">Temperature</div>
+          
+<div class="row2">Aluminum</div><div class="row2">39</div><div class="row2 tableBorder">658</div>
+<div class="row2">Iron</div><div class="row2">27</div><div class="row2">1539</div>
+          
+<div class="row1">Gold</div><div class="row1">6.7</div><div class="row1 tableBorder">1063</div>
+<div class="row1">Ice</div><div class="row1">34</div><div class="row1">0</div>
+          
+<div class="row2">Copper</div><div class="row2">21</div><div class="row2 tableBorder">1083</div>
+<div class="row2">Naphthalene</div><div class="row2">15</div><div class="row2">80</div>
+          
+<div class="row1">Tin</div><div class="row1">5.9</div><div class="row1 tableBorder">232</div>
+<div class="row1">Platinum</div><div class="row1">11</div><div class="row1">1774</div>
+          
+<div class="row2">Mercury</div><div class="row2">1</div><div class="row2 tableBorder">-39</div>
+<div class="row2">Lead</div><div class="row2">2.5</div><div class="row2">327</div>
+          
+<div class="row1">Silver</div><div class="row1">10</div><div class="row1 tableBorder">960</div>
+<div class="row1">Zinc</div><div class="row1">12</div><div class="row1">420</div>
+          
+        </div>
+
+        <div class="table transcalencies-table d-none" id="page_06">
+
+<div class="row1">Name</div><div class="row1">Energy, 10<sup>6</sup></div><div class="row1 tableBorder">Temperature</div>
+<div class="row1">Name</div><div class="row1">Energy, 10<sup>6</sup></div><div class="row1">Temperature</div>
+                    
+<div class="row2">Water</div><div class="row2">2.3</div><div class="row2 tableBorder">100</div>
+<div class="row2">Mercury</div><div class="row2">0.3</div><div class="row2">357</div>
+                    
+<div class="row1">Alcohol</div><div class="row1">0.9</div><div class="row1 tableBorder">78</div>
+<div class="row1">Ether</div><div class="row1">0.4</div><div class="row1">35</div>
+                    
+          </div>
+
+          <div class="table transcalencies-table d-none" id="page_07">
+
+<div class="row1">Name</div><div class="row1 tableBorder">Energy, 10<sup>6</sup></div>
+<div class="row1">Name</div><div class="row1 tableBorder">Energy, 10<sup>6</sup></div>
+<div class="row1">Name</div><div class="row1 tableBorder">Energy, 10<sup>6</sup></div>
+<div class="row1">Name</div><div class="row1">Energy, 10<sup>6</sup></div>
+            
+<div class="row2">Petrol</div><div class="row2 tableBorder">46</div><div class="row2">Brown coal</div><div class="row2 tableBorder">17</div>
+<div class="row2">Hydrogen</div><div class="row2 tableBorder">120</div><div class="row2">Diesel fuel</div><div class="row2 ">42.7</div>
+            
+<div class="row1">Birch tree</div><div class="row1 tableBorder">13</div><div class="row1">Pine</div><div class="row1 tableBorder">13</div>
+<div class="row1">Charcoal</div><div class="row1 tableBorder">34</div><div class="row1">Coal</div><div class="row1 ">30</div>
+            
+<div class="row2">Kerosene</div><div class="row2 tableBorder">46</div><div class="row2">Oil</div><div class="row2 tableBorder">44</div>
+<div class="row2">Powder</div><div class="row2 tableBorder">3.8</div><div class="row2">Natural gas</div><div class="row2 ">44</div>
+
+<div class="row1">Alcohol</div><div class="row1 tableBorder">27</div><div class="row1">Peat</div><div class="row1 tableBorder">14880</div>
+            
+          </div>
+
+          <div class="table resistivity-table d-none" id="page_08">
+
+<div class="row1">Name</div><div class="row1 tableBorder">Resistivity</div>
+<div class="row1">Name</div><div class="row1 tableBorder">Resistivity</div>
+<div class="row1">Name</div><div class="row1 tableBorder">Resistivity</div>
+<div class="row1">Name</div><div class="row1">Resistivity</div>
+                        
+<div class="row2">Aluminum</div><div class="row2 tableBorder">0.028</div><div class="row2">Tungsten</div><div class="row2 tableBorder">0.055</div>
+<div class="row2">Iron</div><div class="row2 tableBorder">0.1</div><div class="row2">Copper</div><div class="row2 ">0.017</div>
+                        
+<div class="row1">Platinum</div><div class="row1 tableBorder">0.1</div><div class="row1">Mercury</div><div class="row1 tableBorder">0.96</div>
+<div class="row1">Lead</div><div class="row1 tableBorder">0.21</div><div class="row1">Silver</div><div class="row1 ">0.016</div>
+                        
+<div class="row2">Steel</div><div class="row2 tableBorder">0.15</div><div class="row2">Zinc</div><div class="row2 tableBorder">0.06</div>
+<div class="row2">Constantan</div><div class="row2 tableBorder">0.5</div><div class="row2">Nickeline</div><div class="row2 ">0.4</div>
+                      
+<div class="row1">Nickel</div><div class="row1 tableBorder">0.45</div><div class="row1">Nichrome</div><div class="row1 tableBorder">1.1</div>
+                        
+          </div>
+
         <hr>
       </div>
     </div>
