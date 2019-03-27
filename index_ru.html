@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta Название="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Физические Величины</title>
+</head>
+<body>
+  <div class="container-fluid p-0 d-flex flex-row">
+    <div class="navCont">
+      <nav>
+        <ul class="nav-ul" id="01-03">
+          <span>Плотности</span>
+          <li class="d-none" id="btn_01">Металлы</li>
+          <li class="d-none" id="btn_02">Жидкости</li>
+          <li class="d-none" id="btn_03">Газы</li>
+        </ul>
+        <ul class="nav-ul" id="04-07">
+          <span>Теплоемкости</span>
+          <li class="d-none" id="btn_04">Нагревание</li>
+          <li class="d-none" id="btn_05">Плавление</li>
+          <li class="d-none" id="btn_06">Испарение</li>
+          <li class="d-none" id="btn_07">Сгорание топлива</li>
+        </ul>
+        <ul class="nav-ul" id="08-08"> 
+          <span>Электрическое сопротивление</span>
+          <li class="d-none" id="btn_08" name="Электрическое сопротивление">Проводники</li>
+        </ul>
+      </nav>
+      <div class="calculator fixed-bottom">
+        <div class="conatainer p-4 d-flex justify-content-center align-items-center">
+          <div class="bg-light p-2">
+            <div class="display">
+                <input type="text" class="m-1 first">
+              </div>
+            <div class="btns">
+              <div class="row d-flex justify-content-center">
+                <div class="btn border m-1 num">9</div>
+                <div class="btn border m-1 num">8</div>
+                <div class="btn border m-1 num">7</div>
+                <div class="btn border m-1 fn">*</div>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="btn border m-1 num">6</div>
+                <div class="btn border m-1 num">5</div>
+                <div class="btn border m-1 num">4</div>
+                <div class="btn border m-1 fn">/</div>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="btn border m-1 num">3</div>
+                <div class="btn border m-1 num">2</div>
+                <div class="btn border m-1 num">1</div>
+                <div class="btn border m-1 fn">+</div>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="btn border m-1 num">0</div>
+                <div class="btn border m-1 fn">=</div>
+                <div class="btn border m-1 fn">√</div>
+                <div class="btn border m-1 fn">-</div>
+              </div>   
+            </div>
+          </div>
+        </div>
+        <span><div>Калькулятор</div></span>
+      </div>
+    </div>
+    <div class="container mainContent">
+      <div class="innerMainContent p-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <div id="btn_00"><h1>Физические Величины</h1></div>
+            <div class="d-flex align-items-between flex-column">
+                <div class="d-flex justify-content-between align-items-center" id="search">
+                    <input type="text">
+                    <div class="btn bg-light border"><span>Искать</span></div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <div><h3><span class="path">Главное Меню</span><span class="path"></span></h3></div>
+            <div>
+                <div class="d-flex justify-content-end flex-row">
+                    <div class="lang selectedLang"><a href="index_ru.html">RU</a></div>
+                    <div class="lang"><a href="index_en.html">EN</a></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="page_00">
+          <h2>Добро Пожаловать</h2>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sint, odit eos dolorem laboriosam, et, eum nisi velit incidunt quam praesentium ad excepturi quidem obcaecati voluptate reiciendis harum. Minus, consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero natus necessitatibus magnam consequatur sapiente earum officiis, tempore consequuntur ex hic. Nam error consectetur dolorem quaerat, repudiandae expedita odio sed amet id ad, cum quo aspernatur placeat optio harum voluptatibus asperiores voluptatem praesentium unde possimus dicta quod deleniti. Ad mollitia vero expedita sint ex, eius fuga culpa accusamus asperiores earum nostrum neque excepturi voluptate quia rerum molestias, at maiores officiis voluptas!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste iusto, saepe quod molestiae provident recusandae aspernatur, cum consequatur dignissimos expedita voluptate deleniti laboriosam, numquam molestias. Deserunt alias tempore doloribus voluptatibus adipisci et incidunt magnam, repellat, delectus voluptas ad eos eum dolorum nemo provident magni, hic quod temporibus! Pariatur, sapiente?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati id pariatur harum quas libero nihil perspiciatis exercitationem, ipsam similique dolorem commodi iusto maxime sapiente ipsa. Animi porro illum explicabo eaque impedit nemo dolor ipsa repellendus voluptatum, deleniti voluptatibus dolorum?</p>
+        </div>
+
+        <div class="table density-table d-none" id="page_01">
+
+<div class="row1">Название</div><div class="tableBorder row1">Плотность</div><div class="row1">Название</div><div class="tableBorder row1">Плотность</div>
+<div class="row1">Название</div><div class="tableBorder row1">Плотность</div><div class="row1">Название</div><div class=" row1">Плотность</div>
+
+<div class="row2">Осмий</div><div class="tableBorder row2">22600</div><div class="row2">Иридий</div><div class="tableBorder row2">22400</div>
+<div class="row2">Платина</div><div class="tableBorder row2">21500</div><div class="row2">Золото</div><div class=" row2">19300</div>
+
+<div class="row1">Свинец</div><div class="tableBorder row1">11300</div><div class="row1">Серебро</div><div class="tableBorder row1">10500</div>
+<div class="row1">Медь</div><div class="tableBorder row1">8900</div><div class="row1">Латунь</div><div class=" row1">8500</div>
+
+<div class="row2">Сталь</div><div class="tableBorder row2">7800</div><div class="row2">Железо</div><div class="tableBorder row2">7300</div>
+<div class="row2">Олово</div><div class="tableBorder row2">7100</div><div class="row2">Цинк</div><div class=" row2">7000</div>
+
+<div class="row1">Чугун</div><div class="tableBorder row1">4000</div><div class="row1">Корунд</div><div class="tableBorder row1">2700</div>
+<div class="row1">Аллюминий</div><div class="tableBorder row1">2700</div><div class="row1">Мрамор</div><div class=" row1">2700</div>
+
+<div class="row2">Оконное стекло</div><div class="tableBorder row2">2500</div><div class="row2">Фарфор</div><div class="tableBorder row2">2300</div>
+<div class="row2">Бетон</div><div class="tableBorder row2">2300</div><div class="row2">Кирпич</div><div class=" row2">1800</div>
+
+<div class="row1">Сахар</div><div class="tableBorder row1">1600</div><div class="row1">Плексиглас</div><div class="tableBorder row1">1200</div>
+<div class="row1">Капрон</div><div class="tableBorder row1">1100</div><div class="row1">Полиэтилен</div><div class=" row1">920</div>
+
+<div class="row2">Парафин</div><div class="tableBorder row2">900</div><div class="row2">Лед</div><div class="tableBorder row2">900</div>
+<div class="row2">Дуб</div><div class="tableBorder row2">700</div><div class="row2">Сосна</div><div class=" row2">400</div>
+
+<div class="row1">Пробка</div><div class="tableBorder row1">240</div>
+        </div>
+        
+        <div class="table density-table d-none"  id="page_02">
+
+<div class="row1">Название</div><div class="row1 tableBorder">Плотность</div><div class="row1">Название</div><div class="row1 tableBorder">Плотность</div>
+<div class="row1">Название</div><div class="row1 tableBorder">Плотность</div><div class="row1">Название</div><div class="row1 ">Плотность</div>
+
+<div class="row2">Бензин</div><div class="row2 tableBorder">710</div><div class="row2">Вода</div><div class="row2 tableBorder">1000</div>
+<div class="row2">Морская вода</div><div class="row2 tableBorder">1030</div><div class="row2">Керосин</div><div class="row2 ">800</div>
+
+<div class="row1">Молоко</div><div class="row1 tableBorder">1030</div><div class="row1">Нефть</div><div class="row1 tableBorder">800</div>
+<div class="row1">Ртуть</div><div class="row1 tableBorder">13600</div><div class="row1">Серная кислота</div><div class="row1 ">1800</div>
+
+<div class="row2">Спирт</div><div class="row2 tableBorder">800</div><div class="row2">Эфир</div><div class="row2 tableBorder">710</div>
+
+        </div>
+
+        <div class="table density-table d-none" id="page_03">
+
+<div class="row1">Название</div><div class="row1 tableBorder">Плотность</div><div class="row1">Название</div><div class="row1 tableBorder">Плотность</div>
+<div class="row1">Название</div><div class="row1 tableBorder">Плотность</div><div class="row1">Название</div><div class="row1 ">Плотность</div>
+
+<div class="row2">Воздух</div><div class="row2 tableBorder">1.29</div><div class="row2">Водород</div><div class="row2 tableBorder">0.09</div>
+<div class="row2">Пропан</div><div class="row2 tableBorder">2</div><div class="row2">Гелий</div><div class="row2">0.18</div>
+
+<div class="row1">Неон</div><div class="row1 tableBorder">0.9</div><div class="row1">Монооксид углерода IV</div><div class="row1 tableBorder">1.98</div>
+
+        </div>
+
+        <div class="table transcalencies-table d-none" id="page_04">
+
+<div class="row1">Название</div><div class="row1 tableBorder">Энергия</div>
+<div class="row1">Название</div><div class="row1 tableBorder">Энергия</div>
+<div class="row1">Название</div><div class="row1 tableBorder">Энергия</div>
+<div class="row1">Название</div><div class="row1">Энергия</div>
+
+<div class="row2">Аллюминий</div><div class="row2 tableBorder">920</div><div class="row2">Вода</div><div class="row2 tableBorder">4200</div>
+<div class="row2">Воздух</div><div class="row2 tableBorder">1000</div><div class="row2">Железо</div><div class="row2 ">460</div>
+
+<div class="row1">Керосин</div><div class="row1 tableBorder">2100</div><div class="row1">Кирпич</div><div class="row1 tableBorder">880</div>
+<div class="row1">Латунь</div><div class="row1 tableBorder">380</div><div class="row1">Лед</div><div class="row1 ">2100</div>
+
+<div class="row2">Медь</div><div class="row2 tableBorder">380</div><div class="row2">Никель</div><div class="row2 tableBorder">460</div>
+<div class="row2">Олово</div><div class="row2 tableBorder">250</div><div class="row2">Песок</div><div class="row2 ">880</div>
+
+<div class="row1">Платина</div><div class="row1 tableBorder">140</div><div class="row1">Ртуть</div><div class="row1 tableBorder">130</div>
+<div class="row1">Свинец</div><div class="row1 tableBorder">140</div><div class="row1">Серебро</div><div class="row1 ">250</div>
+
+<div class="row2">Спирт</div><div class="row2 tableBorder">2500</div><div class="row2">Сталь</div><div class="row2 tableBorder">500</div>
+<div class="row2">Стекло</div><div class="row2 tableBorder">840</div><div class="row2">Цинк</div><div class="row2 ">380</div>
+
+<div class="row1">Чугун</div><div class="row1 tableBorder">540</div><div class="row1">Эфир</div><div class="row1 ">3340</div>
+
+        </div>
+
+        <div class="table transcalencies-table d-none" id="page_05">
+
+<div class="row1">Название</div><div class="row1">Энергия, 10<sup>4</sup></div><div class="row1 tableBorder">Температура</div>
+<div class="row1">Название</div><div class="row1">Энергия, 10<sup>4</sup></div><div class="row1">Температура</div>
+          
+<div class="row2">Аллюминий</div><div class="row2">39</div><div class="row2 tableBorder">658</div>
+<div class="row2">Железо</div><div class="row2">27</div><div class="row2">1539</div>
+          
+<div class="row1">Золото</div><div class="row1">6.7</div><div class="row1 tableBorder">1063</div>
+<div class="row1">Лед</div><div class="row1">34</div><div class="row1">0</div>
+          
+<div class="row2">Медь</div><div class="row2">21</div><div class="row2 tableBorder">1083</div>
+<div class="row2">Нафталин</div><div class="row2">15</div><div class="row2">80</div>
+          
+<div class="row1">Олово</div><div class="row1">5.9</div><div class="row1 tableBorder">232</div>
+<div class="row1">Платина</div><div class="row1">11</div><div class="row1">1774</div>
+          
+<div class="row2">Ртуть</div><div class="row2">1</div><div class="row2 tableBorder">-39</div>
+<div class="row2">Свинец</div><div class="row2">2.5</div><div class="row2">327</div>
+          
+<div class="row1">Серебро</div><div class="row1">10</div><div class="row1 tableBorder">960</div>
+<div class="row1">Цинк</div><div class="row1">12</div><div class="row1">420</div>
+          
+        </div>
+
+        <div class="table transcalencies-table d-none" id="page_06">
+
+<div class="row1">Название</div><div class="row1">Энергия, 10<sup>6</sup></div><div class="row1 tableBorder">Температура</div>
+<div class="row1">Название</div><div class="row1">Энергия, 10<sup>6</sup></div><div class="row1">Температура</div>
+                    
+<div class="row2">Вода</div><div class="row2">2.3</div><div class="row2 tableBorder">100</div>
+<div class="row2">Ртуть</div><div class="row2">0.3</div><div class="row2">357</div>
+                    
+<div class="row1">Спирт</div><div class="row1">0.9</div><div class="row1 tableBorder">78</div>
+<div class="row1">Эфир</div><div class="row1">0.4</div><div class="row1">35</div>
+                    
+          </div>
+
+          <div class="table transcalencies-table d-none" id="page_07">
+
+<div class="row1">Название</div><div class="row1 tableBorder">Энергия, 10<sup>6</sup></div>
+<div class="row1">Название</div><div class="row1 tableBorder">Энергия, 10<sup>6</sup></div>
+<div class="row1">Название</div><div class="row1 tableBorder">Энергия, 10<sup>6</sup></div>
+<div class="row1">Название</div><div class="row1">Энергия, 10<sup>6</sup></div>
+            
+<div class="row2">Бензин</div><div class="row2 tableBorder">46</div><div class="row2">Бурый уголь</div><div class="row2 tableBorder">17</div>
+<div class="row2">Водород</div><div class="row2 tableBorder">120</div><div class="row2">Дизель</div><div class="row2 ">42.7</div>
+            
+<div class="row1">Береза</div><div class="row1 tableBorder">13</div><div class="row1">Сосна</div><div class="row1 tableBorder">13</div>
+<div class="row1">Древесный уголь</div><div class="row1 tableBorder">34</div><div class="row1">Каменный уголь</div><div class="row1 ">30</div>
+            
+<div class="row2">Керосин</div><div class="row2 tableBorder">46</div><div class="row2">Нефть</div><div class="row2 tableBorder">44</div>
+<div class="row2">Порох</div><div class="row2 tableBorder">3.8</div><div class="row2">Природный газ</div><div class="row2 ">44</div>
+
+<div class="row1">Спирт</div><div class="row1 tableBorder">27</div><div class="row1">Торф</div><div class="row1 tableBorder">14880</div>
+            
+          </div>
+
+          <div class="table resistivity-table d-none" id="page_08">
+
+<div class="row1">Название</div><div class="row1 tableBorder">Сопротивление</div>
+<div class="row1">Название</div><div class="row1 tableBorder">Сопротивление</div>
+<div class="row1">Название</div><div class="row1 tableBorder">Сопротивление</div>
+<div class="row1">Название</div><div class="row1">Сопротивление</div>
+                        
+<div class="row2">Аллюминий</div><div class="row2 tableBorder">0.028</div><div class="row2">Вольфрам</div><div class="row2 tableBorder">0.055</div>
+<div class="row2">Железо</div><div class="row2 tableBorder">0.1</div><div class="row2">Медь</div><div class="row2 ">0.017</div>
+                        
+<div class="row1">Платина</div><div class="row1 tableBorder">0.1</div><div class="row1">Ртуть</div><div class="row1 tableBorder">0.96</div>
+<div class="row1">Свинец</div><div class="row1 tableBorder">0.21</div><div class="row1">Серебро</div><div class="row1 ">0.016</div>
+                        
+<div class="row2">Сталь</div><div class="row2 tableBorder">0.15</div><div class="row2">Цинк</div><div class="row2 tableBorder">0.06</div>
+<div class="row2">Константан</div><div class="row2 tableBorder">0.5</div><div class="row2">Никелин</div><div class="row2 ">0.4</div>
+                      
+<div class="row1">Никель</div><div class="row1 tableBorder">0.45</div><div class="row1">Нихром</div><div class="row1 tableBorder">1.1</div>
+                        
+          </div>
+
+        <hr>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

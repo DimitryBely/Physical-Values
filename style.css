@@ -9,6 +9,15 @@ body{
     background-color: #f1f1f1;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
 .navCont{
     min-height: 6667px;
     background-color: #dfdfdf;
@@ -44,6 +53,19 @@ nav ul li:hover{
     background-color: #eceaea;
 }
 
+.lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 30px;
+}
+.selectedLang{
+    background-color: #dfdfdf;
+}
+
+
 .calculator > span > div{
     cursor: pointer;
     width: 200px;
@@ -63,13 +85,13 @@ nav ul li:hover{
 
 .density-table{
     display: grid;
+    grid-template-columns:  100px 100px 100px 100px 100px 100px 100px 100px;
     grid-template-rows: 55px 55px 55px 55px 55px 55px 55px 55px 55px;
-    grid-template-columns:  100px 70px 100px 70px 100px 70px 100px 70px;
 }
 .transcalencies-table{
     display: grid;
+    grid-template-columns:  100px 120px 100px 120px 100px 120px;
     grid-template-rows: 55px 55px 55px 55px 55px 55px 55px 55px 55px;
-    grid-template-columns:  100px 100px 100px 100px 100px 100px;
 }
 .resistivity-table{
     display: grid;
@@ -78,11 +100,18 @@ nav ul li:hover{
 }
 #page_04{
     grid-template-columns:  100px 100px 100px 100px 100px 100px 100px 100px;
-    grid-template-rows: 55px 55px 55px 55px 55px 55px 55px 55px 55px;
+}
+#page_05{
+    grid-template-columns:  100px 110px 120px 100px 110px 120px;
+}
+#page_06{
+    grid-template-columns:  100px 110px 120px 100px 110px 120px;
 }
 #page_07{
-    grid-template-columns:  100px 100px 100px 100px 100px 100px 100px 100px;
-    grid-template-rows: 55px 55px 55px 55px 55px 55px;
+    grid-template-columns:  100px 110px 100px 110px 100px 110px 100px 110px;
+}
+#page_08{
+    grid-template-columns:  100px 125px 100px 125px 100px 125px 100px 125px;
 }
 .table > div{
     padding: 5px;

@@ -2,6 +2,13 @@
 
 window.addEventListener('DOMContentLoaded', () => {
 
+// Change Language
+
+    let lang = '';
+    document.querySelectorAll('.lang')[0].classList.contains('selectedLang') ? lang = 'ru': lang = 'en';
+
+// ---------
+
 // Calculator
 
     const   btns = document.querySelectorAll('.calculator .btn'),
@@ -123,7 +130,7 @@ window.addEventListener('DOMContentLoaded', () => {
         document.querySelector(`#page_${now}`).classList.add('d-none');
         now = '00';
         document.querySelector(`#page_00`).classList.remove('d-none');
-        path[0].textContent = 'Welcome';
+        lang == 'ru' ? path[0].textContent = 'Главное Меню' : path[0].textContent = 'Main Menu';
         path[1].textContent = '';
     });
 
@@ -150,10 +157,10 @@ window.addEventListener('DOMContentLoaded', () => {
             document.querySelector(`#page_${now}`).classList.add('d-none');
             now = btn.id.slice(-2);
             document.querySelector(`#page_${btn.id.slice(-2)}`).classList.remove('d-none');
-            if(+now == 0) {path[0].textContent = 'Welcome'}
-            else if(+now <= 3) {path[0].textContent = 'Density'}
-            else if(+now <= 7) {path[0].textContent = 'Transcalencies'}
-            else if(+now == 8) {path[0].textContent = 'Electrical resistivity'}
+            if(+now == 0) {path[0].textContent = ''}
+            else if(+now <= 3) {lang == 'ru' ? path[0].textContent = 'Плотности' : path[0].textContent = 'Densities';}
+            else if(+now <= 7) {lang == 'ru' ? path[0].textContent = 'Плотности' : path[0].textContent = 'Transcalencies';}
+            else if(+now == 8) {lang == 'ru' ? path[0].textContent = 'Плотности' : path[0].textContent = 'Electrical Resistivity';}
             path[1].textContent = `/${btn.textContent}`;
         });
     });
